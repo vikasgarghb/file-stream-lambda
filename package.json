@@ -1,0 +1,32 @@
+{
+  "name": "copy-file-via-stream",
+  "version": "0.0.1",
+  "description": "Lambda function to upload the file to S3 from a give url",
+  "scripts": {
+    "build": "npm run clean && webpack",
+    "watch": "tsc -w",
+    "lint": "eslint --ext .ts .",
+    "clean": "rimraf dist"
+  },
+  "author": "Vikas Garg",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^13.7.7",
+    "@types/webpack": "^4.41.7",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "aws-sdk": "^2.659.0",
+    "axios": "^0.19.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

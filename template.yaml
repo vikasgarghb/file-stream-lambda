@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Template for net-run-rate-calculator state machine
+
+Globals:
+  Function:
+    Timeout: 3
+    Runtime: nodejs12.x
+    CodeUri: dist
+
+Resources:
+  CopyFileFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: copyFile.handler
+
